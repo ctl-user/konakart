@@ -1,0 +1,61 @@
+K 10
+.classpath
+V 22
+file 0-1.0.r1/39285192
+K 8
+.project
+V 22
+file 3-1.0.r1/39285370
+K 9
+.settings
+V 21
+dir 5-1.0.r1/39287219
+K 11
+MANIFEST.MF
+V 22
+file j-1.0.r1/39287349
+K 10
+WebContent
+V 21
+dir l-1.0.r1/40097076
+K 3
+ant
+V 23
+dir 3mp-1.0.r1/40097483
+K 5
+build
+V 23
+dir 3mt-1.0.r1/40431139
+K 16
+build.properties
+V 24
+file 56t-1.0.r1/40431266
+K 9
+build.xml
+V 24
+file 56v-1.0.r1/40431458
+K 8
+licenses
+V 23
+dir 56x-1.0.r1/40431928
+K 9
+resources
+V 23
+dir 571-1.0.r1/40437206
+K 3
+src
+V 23
+dir 585-1.0.r1/40701404
+END
+K 10
+README.txt
+V 14
+file _0.0.t3-4
+K 4
+conf
+V 13
+dir _3.0.t3-4
+K 2
+db
+V 13
+dir _d.0.t3-4

@@ -1,0 +1,17 @@
+END
+K 5
+authz
+V 14
+file _4.0.t3-4
+K 14
+hooks-env.tmpl
+V 14
+file _7.0.t3-4
+K 6
+passwd
+V 14
+file _9.0.t3-4
+K 13
+svnserve.conf
+V 14
+file _b.0.t3-4

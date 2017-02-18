@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Class-Path: 
+
+Name: konakart_withoutleak
+Implementation-Vendor: DS Data Systems (UK) Ltd.
+Implementation-Title: konakart_withoutleak
+Implementation-Version: N.N.N.N
+Build-Date: 4:52PM 19-May-2015 IST
+Build-Host: CDC-062-01

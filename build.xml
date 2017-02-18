@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="kkeclipse">
+	<property environment="env"/>
+	<property name="ECLIPSE_HOME" value="../../softwares/eclipse-jee-indigo-SR2-win32-x86_64/eclipse"/>
+	<property name="debuglevel" value="source,lines,vars"/>
+	<property name="target" value="1.6"/>
+	<property name="source" value="1.6"/>
+	<path id="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath">
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/annotations-api.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/catalina-ant.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/catalina-ha.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/catalina-tribes.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/catalina.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/ecj-3.7.2.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/el-api.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/jasper-el.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/jasper.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/jsp-api.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/servlet-api.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-api.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-coyote.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-dbcp.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-i18n-es.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-i18n-fr.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-i18n-ja.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-jdbc.jar"/>
+		<pathelement location="../../Program Files/Apache Software Foundation/Tomcat 7.0/lib/tomcat-util.jar"/>
+	</path>
+	<path id="Web App Libraries.libraryclasspath">
+		<pathelement location="WebContent/WEB-INF/lib/FedTaxApi.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/activation.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/antlr-2.7.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/avalon-framework-api-4.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/avalon-logkit-2.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/axis.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-beanutils-1.8.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-chain-1.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-codec-1.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-collections-3.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-configuration-1.7.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-dbcp-1.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-digester-2.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-discovery-0.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-io-2.0.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-lang-2.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-lang3-3.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-pool-1.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-validator-1.3.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/db2jcc.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/db2jcc_license_cu.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/freemarker-2.3.19.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/httpclient-4.3.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/httpcore-4.3.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jackson-core-lgpl-1.7.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jackson-mapper-lgpl-1.7.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jaxb-api.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jaxb-impl.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jaxrpc.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jcs-1.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jdbc-2.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jdom-1.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jersey-bundle-1.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jndi-1.2.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jsp-api.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jsr311-api-1.1.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jtds-1.2.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_app.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_authorizenet.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_custom.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_custom_engine.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_custom_utils.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_fedex.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_json.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_buyxgetyfree.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_externaltax.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_freeproduct.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_giftcertificate.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_paymentcharge.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_productdiscount.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_redeempoints.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_rewardpoints.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_shipping.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_shippingdiscount.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_subtotal.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_tax.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_taxcloud.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_thomson.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_total.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_totaldiscount.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_authorizenet.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_barclaycardsmartpayapi.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_barclaycardsmartpayhosted.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_bluepay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_caledon.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_chronopay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_cod.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_commideavanguard.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_cybersourcesa.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_elink.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_eway_au.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_globalcollect.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_moneybookers.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_netpayintl.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_payflowpro.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_payjunction.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_paypal.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_usaepay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_worldpay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_worldpayxmlredirect.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_digitaldownload.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_fedex.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_flat.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_free.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_freeproduct.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_item.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_pickupinstore.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_table.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_ups.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_usps.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_uspsint.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_zones.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_thomson.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_torque-4.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_utils.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_village-4.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakartadmin.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakartadmin_custom.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/log4j-1.2.12.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/logkit-1.0.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/mail.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/ognl-3.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/ojdbc6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/oro-2.0.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/portlet.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/postgresql-9.1-901.jdbc4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/saaj.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/stratum-1.0-b3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-core-kk-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-json-plugin-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-portlet-plugin-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-portlet-tiles-plugin-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-tiles-plugin-kk-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/tiles-api-2.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/tiles-core-2.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/tiles-jsp-2.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/validation-api-1.0.0.GA.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/velocity-1.6.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/velocity-tools-generic-1.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/werken-xpath-0.9.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/wsdl4j-1.5.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/xml-apis-2.0.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/xwork-core-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/servlet-api.jar"/>
+		<pathelement location="WebContent/WEB-INF/classes"/>
+	</path>
+	<path id="EAR Libraries.libraryclasspath"/>
+	<path id="kkeclipse.classpath">
+		<pathelement location="build/classes"/>
+		<path refid="Apache Tomcat v7.0 [Apache Tomcat v7.0].libraryclasspath"/>
+		<path refid="Web App Libraries.libraryclasspath"/>
+		<path refid="EAR Libraries.libraryclasspath"/>
+		<pathelement location="WebContent/WEB-INF/lib/activation.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/antlr-2.7.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/avalon-framework-api-4.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/avalon-logkit-2.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/axis.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-beanutils-1.8.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-chain-1.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-codec-1.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-collections-3.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-configuration-1.7.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-dbcp-1.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-digester-2.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-discovery-0.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-fileupload-1.2.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-io-2.0.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-lang-2.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-lang3-3.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-logging-1.1.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-pool-1.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/commons-validator-1.3.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/db2jcc_license_cu.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/db2jcc.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/FedTaxApi.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/freemarker-2.3.19.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/httpclient-4.3.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/httpcore-4.3.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jackson-core-lgpl-1.7.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jackson-mapper-lgpl-1.7.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jakarta-oro.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/javassist-3.11.0.GA.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jaxb-api.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jaxb-impl.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jaxrpc.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jcs-1.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jdbc-2.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jdom-1.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jersey-bundle-1.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jndi-1.2.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jsp-api.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jsr311-api-1.1.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/jtds-1.2.5.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_app.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_authorizenet.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_custom_engine.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_custom_utils.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_custom.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_fedex.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_json.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_buyxgetyfree.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_externaltax.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_freeproduct.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_giftcertificate.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_paymentcharge.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_productdiscount.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_redeempoints.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_rewardpoints.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_shipping.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_shippingdiscount.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_subtotal.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_tax.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_taxcloud.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_thomson.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_total.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_ordertotal_totaldiscount.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_authorizenet.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_barclaycardsmartpayapi.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_barclaycardsmartpayhosted.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_bluepay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_caledon.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_chronopay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_cod.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_commideavanguard.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_cybersourcesa.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_elink.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_eway_au.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_globalcollect.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_moneybookers.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_netpayintl.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_payflowpro.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_payjunction.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_paypal.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_usaepay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_worldpay.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_payment_worldpayxmlredirect.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_digitaldownload.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_fedex.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_flat.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_free.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_freeproduct.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_item.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_pickupinstore.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_table.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_ups.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_usps.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_uspsint.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_shipping_zones.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_thomson.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_torque-4.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_utils.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart_village-4.0.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakart.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakartadmin_custom.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/konakartadmin.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/log4j-1.2.12.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/logkit-1.0.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/mail.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/mysql-connector-java-5.1.23-bin.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/ognl-3.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/ojdbc6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/oro-2.0.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/portlet.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/postgresql-9.1-901.jdbc4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/saaj.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/stratum-1.0-b3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-core-kk-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-json-plugin-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-portlet-plugin-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-portlet-tiles-plugin-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/struts2-tiles-plugin-kk-2.3.8.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/tiles-api-2.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/tiles-core-2.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/tiles-jsp-2.0.6.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/validation-api-1.0.0.GA.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/velocity-1.6.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/velocity-tools-generic-1.3.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/werken-xpath-0.9.4.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/wsdl4j-1.5.1.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/xml-apis-2.0.2.jar"/>
+		<pathelement location="WebContent/WEB-INF/lib/xwork-core-2.3.8.jar"/>
+	</path>
+	<target name="init">
+		<mkdir dir="build/classes"/>
+		<copy includeemptydirs="false" todir="build/classes">
+			<fileset dir="src">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+		<copy includeemptydirs="false" todir="build/classes">
+			<fileset dir="resources">
+				<exclude name="**/*.java"/>
+			</fileset>
+		</copy>
+	</target>
+	<target name="clean">
+		<delete dir="build/classes"/>
+	</target>
+	<target depends="clean" name="cleanall"/>
+	<target depends="build-subprojects,build-project" name="build"/>
+	<target name="build-subprojects"/>
+	<target depends="init" name="build-project">
+		<echo message="${ant.project.name}: ${ant.file}"/>
+		<javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
+			<src path="src"/>
+			<classpath refid="kkeclipse.classpath"/>
+		</javac>
+		<javac debug="true" debuglevel="${debuglevel}" destdir="build/classes" source="${source}" target="${target}">
+			<src path="resources"/>
+			<classpath refid="kkeclipse.classpath"/>
+		</javac>
+	</target>
+	<target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+	<target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+		<copy todir="${ant.library.dir}">
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+		</copy>
+		<unzip dest="${ant.library.dir}">
+			<patternset includes="jdtCompilerAdapter.jar"/>
+			<fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+		</unzip>
+	</target>
+	<target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+		<antcall target="build"/>
+	</target>
+
+	<target name="war" description="Bundles the application as a WAR file" depends="clean, build">
+		<mkdir dir="WebContent/WEB-INF/classes"/>
+
+		<copy includeemptydirs="false" todir="WebContent/WEB-INF/classes">
+			<fileset dir="build/classes">
+				<include name="**/*.class"/>
+			</fileset>
+		</copy>
+
+		<war destfile="konakart.war"
+              	        basedir="WebContent"
+              	        needxmlfile="false">
+		</war>
+		
+	</target>
+
+
+</project>
